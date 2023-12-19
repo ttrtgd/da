@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,600;8..144,800&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "SeoulNamsan"; 
+  src: url("seoulnamsan-cb.ttf") format("truetype"); 
+  font-style: normal; 
+  font-weight: normal; 
+} 
+
+@keyframes show {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+html {
+  font-family: "SeoulNamsan", sans-serif;
+  overflow-x: hidden;
+}
+
+.show {
+  opacity: 0;
+  animation: show 200ms ease-in-out;
+  animation-fill-mode: forwards;
+}
